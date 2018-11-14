@@ -1,0 +1,123 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Choose your own Adventure</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" />
+
+</head>
+
+<body>
+    <h3 class="text-colour"><b>Welcome to Choose Your Own Adventure!</b></h3>
+    <div>
+        <p class="text-colour"><b> The Mystery of the Haunted House</b></p>
+    </div>
+    <div class="flex">
+        <div> <button class="button" id="btn"><b> START </b></button> </div>
+        <div>
+            <div class="redDoorYes red text-colour hidden">
+                <img src="red_door.jpeg" alt="red door">
+                <p>You chose to enter RED door. You have made a decision!! It is very dark inside. All you
+                    can see is a red beam of light</p>
+                <div> <button class="button" id="btnRed"><b> NEXT </b></button> </div>
+            </div>
+            <div>
+                <div class="upstairs text-colour hidden">
+                    <p>Wohooo!!! You solved the mystery! You reached the Halooween Candy store!</p>
+                    <img src="happy-halloween-win.jpg" alt="Candy Store" height="300">
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="blackDoorYes text-colour black hidden">
+                <img src="black_door.jpeg" alt="black door" width="200">
+                <p> You chose to enter BLACK door. You have made a decision!! It is very dark inside.
+                    You are unable to see anything inside!
+                </p>
+                <div> <button class="button" id="btnBlack"><b> NEXT </b></button></div>
+            </div>
+            <div>
+                <div class="downtairs text-colour hidden">
+                    <p>It is very dark down here! You slipped and had a fall!!! You LOSE!"</p>
+                    <img src="funny-get-well-soon-cards.jpg" alt="Go Down" height="300">
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="goHomeYes text-colour home hidden">
+                <img src="download.jpeg" alt="black door" width="400" height="282">
+                <p> You chicked out! You are now going home!!! ADVENTURE IS OVER!!!! </p>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="adv_index.js"> </script>
+
+    <style>
+        .button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 7px;
+        }
+
+        button:disabled,
+        button[disabled] {
+            border: 0.5px solid #999999;
+            background-color: #cccccc;
+            color: #666666;
+            padding: 10px 20px;
+        }
+
+        body {
+            margin: 0;
+            background: rgb(8, 8, 8);
+            padding: 0.5 em;
+            font-family: 'Mali', cursive;
+        }
+
+        .hidden {
+            visibility: hidden;
+        }
+
+        .text-colour {
+            color: white;
+        }
+
+        .flex {
+            display: inline-flex;
+            width: 200px;
+            height: 100px;
+            padding: 10px;
+            float: left;
+            font-family: 'Mali', cursive;
+        }
+
+        .flex.red {
+            color: red;
+            text-align: center;
+            image-rendering: optimizeSpeed;
+        }
+
+        .flex.black {
+            color: whitesmoke;
+            text-align: center;
+        }
+
+        .flex.home {
+            color: yellow;
+            text-align: justify;
+        }
+    </style>
+</body>
+
+</html>
